@@ -1,0 +1,16 @@
+<div class="container">
+  <section>
+    <div class="card">
+      <div class="card-title">{{ title.source.value.toUpperCase() }}</div>
+      <br />
+      <hr />
+      <br />
+      <div class="card-body">{{ body.source.value.toLowerCase() }}</div>
+      <br />
+      <hr />
+      <br />
+      <div class="card-footer">{{ footer.source.value }}</div>
+    </div>
+  </section>
+  <app-chage (title)="changeTitle($event)"></app-chage>
+</div>
